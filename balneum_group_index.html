@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Balneum Group</title>
+  <meta name="description" content="Balneum Group — a wellness hospitality group specializing in the design and operation of thermal, social, and sensory environments." />
+  <meta name="theme-color" content="#0f1222" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Balneum Group" />
+  <meta property="og:description" content="A wellness hospitality group specializing in thermal, social, and sensory environments." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://balneumgroup.com" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <style>
+    :root {
+      --bg: #0b0d18;
+      --fg: #e9ebf0;
+      --muted: #a9afc1;
+      --accent: #b9ffd2;
+      --line: #1b2033;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--fg);
+      background: radial-gradient(1200px 800px at 80% -10%, #141936 0%, #0b0d18 55%) fixed;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .wrap { max-width: 960px; margin: 0 auto; padding: 28px 20px 80px; }
+
+    header {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); padding-bottom: 18px;
+    }
+
+    .wordmark { letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; font-size: 14px; color: var(--fg); }
+
+    nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 14px; }
+    nav a:hover { color: var(--fg); }
+
+    .badge { display: inline-block; border: 1px solid var(--line); color: var(--muted); font-size: 12px; padding: 6px 10px; border-radius: 999px; }
+
+    .hero { padding: 80px 0 32px; }
+
+    h1 { font-size: clamp(28px, 4.6vw, 48px); line-height: 1.1; margin: 10px 0 12px; font-weight: 600; letter-spacing: -0.01em; }
+
+    .lede { max-width: 720px; font-size: 18px; color: var(--muted); }
+
+    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 22px; margin-top: 48px; }
+
+    .card { grid-column: span 12; border: 1px solid var(--line); border-radius: 18px; padding: 22px; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.0)); }
+
+    .card h3 { margin: 0 0 8px; font-size: 16px; letter-spacing: 0.02em; text-transform: uppercase; color: var(--fg); }
+
+    .card p, .card li { color: var(--muted); font-size: 15px; margin: 0.2rem 0; }
+
+    .cols-2 { grid-column: span 12; }
+    @media (min-width: 820px) { .cols-2 { grid-column: span 6; } }
+
+    .dotlist { list-style: none; padding: 0; }
+    .dotlist li { position: relative; padding-left: 16px; }
+    .dotlist li::before { content: ""; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 2px rgba(185,255,210,0.12); }
+
+    .quiet { color: var(--muted); font-size: 14px; }
+    .divider { height: 1px; background: var(--line); margin: 56px 0 22px; }
+
+    .footer { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; margin-top: 24px; color: var(--muted); font-size: 13px; }
+
+    .cta { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; color: var(--fg); border: 1px solid var(--line); border-radius: 999px; padding: 10px 14px; font-size: 14px; transition: transform .15s ease, border-color .15s ease; }
+    .cta:hover { transform: translateY(-1px); border-color: #2c3558; }
+
+    .disclaimer { opacity: 0.7; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="wordmark">Balneum Group</div>
+      <nav aria-label="Primary">
+        <a href="#focus">Focus</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="focus">
+      <span class="badge">Wellness Hospitality Group</span>
+      <h1>Balneum Group is a wellness hospitality group dedicated to modern thermal and social bathing culture.</h1>
+      <p class="lede">We collaborate with select partners to develop, operate, and refine bathhouse, sauna, and recovery concepts. Our work bridges design, atmosphere, and human experience.</p>
+    </section>
+
+    <section class="grid" id="capabilities">
+      <article class="card cols-2">
+        <h3>Focus</h3>
+        <ul class="dotlist">
+          <li>Bathhouses, saunas, cold immersion & contrast circuits</li>
+          <li>Ritual design, sensory identity, hospitality culture</li>
+          <li>Capacity, pricing, and membership modeling</li>
+        </ul>
+      </article>
+
+      <article class="card cols-2">
+        <h3>Selected Capabilities</h3>
+        <ul class="dotlist">
+          <li>Guest journey architecture & ritual scripting</li>
+          <li>Utilization modeling & scheduling systems</li>
+          <li>Membership & pricing strategy</li>
+          <li>Sensory standards: heat, cold, light, scent, sound</li>
+          <li>Training frameworks for presence‑based service</li>
+          <li>Post‑visit communication & retention flows</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Approach</h3>
+        <p>Grounded in wellness hospitality, we merge the precision of operations with the subtlety of human experience. Details and references available upon request.</p>
+      </article>
+    </section>
+
+    <div class="divider" role="separator" aria-hidden="true"></div>
+
+    <section id="contact">
+      <p class="quiet">For introductions and collaborations:</p>
+      <p>
+        <a class="cta" href="mailto:contact@balneumgroup.com?subject=Intro%20—%20Balneum%20Group">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 7v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          contact@balneumgroup.com
+        </a>
+      </p>
+      <p class="quiet">New York • By referral</p>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Balneum Group. All rights reserved.</div>
+      <div class="disclaimer">Select partnerships only. We do not solicit retail clients.</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
